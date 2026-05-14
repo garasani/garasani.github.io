@@ -8,7 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
 	<div class="site-shell">
 		<header class="site-header">
-			<a class="brand" href="/">Personal Homepage</a>
+			<a class="brand" href="/">이름 또는 닉네임</a>
 			<nav class="nav" aria-label="주요 메뉴">
 				<a href="/">Home</a>
 				<a href="/about/">About</a>
@@ -20,16 +20,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		<main>
 			<section class="hero" aria-labelledby="home-title">
 				<div>
-					<p class="eyebrow">Astro 기반 개인 홈페이지</p>
-					<h1 id="home-title">생각과 작업을 모아두는 작은 공간.</h1>
+					<p class="eyebrow">Personal Homepage</p>
+					<p class="profile-name">이름 또는 닉네임</p>
+					<h1 id="home-title">안녕하세요. 제 생각과 작업을 기록하는 공간입니다.</h1>
+					<p class="tagline">만드는 것, 배우는 것, 오래 남기고 싶은 이야기를 정리합니다.</p>
 					<p class="intro">
-						개인 소개, 프로젝트 기록, 글을 차근차근 확장해갈 홈페이지입니다.
-						첫 버전은 Home에서 시작하고, 이후 About / Projects / Posts 페이지를
-						붙여갈 수 있게 구성했습니다.
+						이곳은 개인 소개와 프로젝트, 글을 차근차근 쌓아갈 홈페이지입니다.
+						오늘은 Home에서 시작하고, 이후 About / Projects / Posts 페이지로
+						확장할 수 있게 구성했습니다.
 					</p>
 					<div class="actions" aria-label="바로가기">
-						<a class="button primary" href="/projects/">Projects</a>
-						<a class="button" href="/posts/">Posts</a>
+						<a class="button primary" href="/about/">About</a>
+						<a class="button" href="/projects/">Projects</a>
 					</div>
 				</div>
 
@@ -43,18 +45,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<section class="sections" aria-label="확장 예정 섹션">
 				<a class="section-link" href="/about/">
 					<span>About</span>
-					<h2>소개</h2>
-					<p>프로필, 관심사, 지금 집중하고 있는 일을 담을 공간입니다.</p>
+					<h2>나를 소개하는 페이지</h2>
+					<p>프로필, 관심사, 현재 집중하고 있는 일을 담을 예정입니다.</p>
 				</a>
 				<a class="section-link" href="/projects/">
 					<span>Projects</span>
-					<h2>프로젝트</h2>
-					<p>완성한 작업과 진행 중인 실험을 정리할 공간입니다.</p>
+					<h2>작업을 모아두는 페이지</h2>
+					<p>완성한 프로젝트와 진행 중인 실험을 정리할 예정입니다.</p>
 				</a>
 				<a class="section-link" href="/posts/">
 					<span>Posts</span>
-					<h2>글</h2>
-					<p>배운 것, 만든 것, 생각을 기록할 공간입니다.</p>
+					<h2>글을 쌓아가는 페이지</h2>
+					<p>배운 것, 만든 것, 생각을 짧거나 길게 기록할 예정입니다.</p>
 				</a>
 			</section>
 		</main>
