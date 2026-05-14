@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+	title="개인 홈페이지"
+	description="Astro로 만든 개인 홈페이지 첫 버전"
+>
+	<div class="site-shell">
+		<header class="site-header">
+			<a class="brand" href="/">Personal Homepage</a>
+			<nav class="nav" aria-label="주요 메뉴">
+				<a href="/">Home</a>
+				<a href="/about/">About</a>
+				<a href="/projects/">Projects</a>
+				<a href="/posts/">Posts</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero" aria-labelledby="home-title">
+				<div>
+					<p class="eyebrow">Astro 기반 개인 홈페이지</p>
+					<h1 id="home-title">생각과 작업을 모아두는 작은 공간.</h1>
+					<p class="intro">
+						개인 소개, 프로젝트 기록, 글을 차근차근 확장해갈 홈페이지입니다.
+						첫 버전은 Home에서 시작하고, 이후 About / Projects / Posts 페이지를
+						붙여갈 수 있게 구성했습니다.
+					</p>
+					<div class="actions" aria-label="바로가기">
+						<a class="button primary" href="/projects/">Projects</a>
+						<a class="button" href="/posts/">Posts</a>
+					</div>
+				</div>
+
+				<p class="note">
+					<strong>배포 목표</strong>
+					GitHub Pages의 github.io 주소에서 빠르게 열리는 정적 홈페이지로
+					다듬어갑니다.
+				</p>
+			</section>
+
+			<section class="sections" aria-label="확장 예정 섹션">
+				<a class="section-link" href="/about/">
+					<span>About</span>
+					<h2>소개</h2>
+					<p>프로필, 관심사, 지금 집중하고 있는 일을 담을 공간입니다.</p>
+				</a>
+				<a class="section-link" href="/projects/">
+					<span>Projects</span>
+					<h2>프로젝트</h2>
+					<p>완성한 작업과 진행 중인 실험을 정리할 공간입니다.</p>
+				</a>
+				<a class="section-link" href="/posts/">
+					<span>Posts</span>
+					<h2>글</h2>
+					<p>배운 것, 만든 것, 생각을 기록할 공간입니다.</p>
+				</a>
+			</section>
+		</main>
+	</div>
+</BaseLayout>
