@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import posts from '../data/posts.json';
+---
+
+<BaseLayout
+	title="Posts | 개인 홈페이지"
+	description="글 중심 콘텐츠를 보여주는 페이지"
+>
+	<main class="page-shell">
+		<p class="eyebrow">Posts</p>
+		<h1>글 목록 페이지</h1>
+		<p class="intro">
+			이 페이지는 글 중심 콘텐츠를 보여주는 공간입니다. 지금은 샘플 글 목록으로
+			시작하고, 나중에 MDX 글 파일이나 다른 콘텐츠 소스로 바꿀 수 있습니다.
+		</p>
+
+		<section class="post-list" aria-label="글 목록">
+			{
+				posts.map((post) => (
+					<article class="post-item">
+						<div class="post-item__meta">
+							<time datetime={post.date}>{post.date}</time>
+							<span>{post.slug}</span>
+						</div>
+						<h2>{post.title}</h2>
+						<p>{post.summary}</p>
+						<ul class="tag-list" aria-label={`${post.title} 태그`}>
+							{post.tags.map((tag) => (
+								<li>{tag}</li>
+							))}
+						</ul>
+					</article>
+				))
+			}
+		</section>
+	</main>
+</BaseLayout>

@@ -1,0 +1,29 @@
+[
+  {
+    "title": "첫 개인 홈페이지",
+    "description": "Astro로 개인 홈페이지의 첫 구조를 만든 실습 프로젝트입니다.",
+    "role": "학습자",
+    "tools": ["Astro", "GitHub Pages", "GitHub Actions"],
+    "result": "Home, About, Projects, Posts 페이지의 기본 구조를 만들었습니다.",
+    "detail": "개인 홈페이지를 만들기 위한 첫 실습 프로젝트입니다. Astro의 파일 기반 라우팅을 사용해 Home, About, Projects, Posts 페이지를 나누었습니다. GitHub Pages 배포 흐름도 함께 확인했습니다. 아직 내용은 계속 다듬는 중입니다.",
+    "slug": "first-homepage"
+  },
+  {
+    "title": "AI 활용 워크숍 실습",
+    "description": "AI 도구를 사용해 웹페이지 구조와 문장을 정리해보는 실습입니다.",
+    "role": "워크숍 실습",
+    "tools": ["Codex", "Astro"],
+    "result": "아이디어를 페이지 구조와 짧은 문장으로 바꾸는 과정을 연습했습니다.",
+    "detail": "AI 도구와 함께 개인 홈페이지 구조를 정리해보는 워크숍 실습입니다. 페이지 목적을 먼저 정하고, 필요한 파일과 문장을 나누어 작성했습니다. 아직 완성된 프로젝트라기보다 학습 기록에 가깝습니다.",
+    "slug": "project-two"
+  },
+  {
+    "title": "앱 개발 학습 기록",
+    "description": "앞으로 앱 개발을 배우며 정리해갈 준비 중인 프로젝트입니다.",
+    "role": "준비 중",
+    "tools": ["Swift", "SwiftUI"],
+    "result": "아직 준비 단계이며, 학습한 내용을 차근차근 채워갈 예정입니다.",
+    "detail": "앱 개발을 배우며 정리해갈 준비 중인 프로젝트입니다. 지금은 방향을 잡는 단계이고, 작은 화면을 만들어보며 배울 예정입니다. 실제 결과물이 생기면 이 카드와 상세 설명을 업데이트할 계획입니다.",
+    "slug": "project-three"
+  }
+]

@@ -3,62 +3,58 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-	title="개인 홈페이지"
-	description="Astro로 만든 개인 홈페이지 첫 버전"
+	title="K.Ha | 개인 홈페이지"
+	description="AI, 디자인, iOS, 웹, 데이터, 교육에 관심을 두고 기록하는 K.Ha의 개인 홈페이지"
 >
-	<div class="site-shell">
-		<header class="site-header">
-			<a class="brand" href="/">이름 또는 닉네임</a>
-			<nav class="nav" aria-label="주요 메뉴">
-				<a href="/">Home</a>
-				<a href="/about/">About</a>
-				<a href="/projects/">Projects</a>
-				<a href="/posts/">Posts</a>
-			</nav>
-		</header>
-
-		<main>
-			<section class="hero" aria-labelledby="home-title">
-				<div>
-					<p class="eyebrow">Personal Homepage</p>
-					<p class="profile-name">이름 또는 닉네임</p>
-					<h1 id="home-title">안녕하세요. 제 생각과 작업을 기록하는 공간입니다.</h1>
-					<p class="tagline">만드는 것, 배우는 것, 오래 남기고 싶은 이야기를 정리합니다.</p>
-					<p class="intro">
-						이곳은 개인 소개와 프로젝트, 글을 차근차근 쌓아갈 홈페이지입니다.
-						오늘은 Home에서 시작하고, 이후 About / Projects / Posts 페이지로
-						확장할 수 있게 구성했습니다.
-					</p>
-					<div class="actions" aria-label="바로가기">
-						<a class="button primary" href="/about/">About</a>
-						<a class="button" href="/projects/">Projects</a>
-					</div>
-				</div>
-
-				<p class="note">
-					<strong>배포 목표</strong>
-					GitHub Pages의 github.io 주소에서 빠르게 열리는 정적 홈페이지로
-					다듬어갑니다.
+	<main class="site-shell">
+		<section class="hero" aria-labelledby="home-title">
+			<div>
+				<p class="eyebrow">Personal Homepage</p>
+				<p class="profile-name">K.Ha</p>
+				<h1 id="home-title">안녕하세요!</h1>
+				<p class="tagline">AI, 디자인, iOS, 웹, 데이터, 교육에 관심을 두고 기록합니다.</p>
+				<p class="intro">
+					이곳은 K.Ha의 개인 홈페이지입니다. 지금은 수업을 위한 첫 구조를
+					만드는 중이고, 나중에 홈페이지 성격에 맞게 메뉴와 문장을 바꿀 수 있습니다.
 				</p>
-			</section>
+				<div class="actions" aria-label="바로가기">
+					<a class="button primary" href="/posts/">Posts 먼저 보기</a>
+					<a class="button" href="/about/">About</a>
+				</div>
+			</div>
 
-			<section class="sections" aria-label="확장 예정 섹션">
-				<a class="section-link" href="/about/">
-					<span>About</span>
-					<h2>나를 소개하는 페이지</h2>
-					<p>프로필, 관심사, 현재 집중하고 있는 일을 담을 예정입니다.</p>
-				</a>
-				<a class="section-link" href="/projects/">
-					<span>Projects</span>
-					<h2>작업을 모아두는 페이지</h2>
-					<p>완성한 프로젝트와 진행 중인 실험을 정리할 예정입니다.</p>
-				</a>
-				<a class="section-link" href="/posts/">
-					<span>Posts</span>
-					<h2>글을 쌓아가는 페이지</h2>
-					<p>배운 것, 만든 것, 생각을 짧거나 길게 기록할 예정입니다.</p>
-				</a>
-			</section>
-		</main>
-	</div>
+			<p class="note">
+				<strong>처음 방문했다면</strong>
+				Posts에서 배운 것과 생각을 먼저 둘러볼 수 있습니다. 아직 임시 문장이지만,
+				앞으로 가장 자주 업데이트할 공간으로 둘 예정입니다.
+			</p>
+		</section>
+
+		<section class="home-guide" aria-labelledby="home-guide-title">
+			<p class="eyebrow">Site Guide</p>
+			<h2 id="home-guide-title">모든 내용을 Home에 다 넣지는 않습니다.</h2>
+			<p>
+				Home은 전체 사이트의 입구입니다. 자세한 소개, 작업 기록, 글은 각각의
+				페이지에 나누어 정리합니다.
+			</p>
+		</section>
+
+		<section class="sections" aria-label="사이트 주요 페이지">
+			<a class="section-link" href="/about/">
+				<span>About</span>
+				<h2>K.Ha를 소개하는 페이지</h2>
+				<p>프로필, 관심 분야, 지금 배우고 있는 내용을 이어서 설명할 공간입니다.</p>
+			</a>
+			<a class="section-link" href="/projects/">
+				<span>Projects</span>
+				<h2>작업을 모아두는 페이지</h2>
+				<p>작업이나 실험을 비슷한 형식의 카드와 상세정보로 정리할 공간입니다.</p>
+			</a>
+			<a class="section-link" href="/posts/">
+				<span>Posts</span>
+				<h2>먼저 보여주고 싶은 글</h2>
+				<p>배운 것, 만든 것, 생각을 글 중심으로 쌓아갈 공간입니다.</p>
+			</a>
+		</section>
+	</main>
 </BaseLayout>

@@ -5,6 +5,13 @@ const {
 	title = 'Personal Homepage',
 	description = 'Astro 기반 개인 홈페이지',
 } = Astro.props;
+
+const navItems = [
+	{ href: '/', label: 'Home' },
+	{ href: '/about/', label: 'About' },
+	{ href: '/projects/', label: 'Projects' },
+	{ href: '/posts/', label: 'Posts' },
+];
 ---
 
 <!doctype html>
@@ -19,6 +26,15 @@ const {
 		<title>{title}</title>
 	</head>
 	<body>
+		<header class="site-header">
+			<a class="brand" href="/">K.Ha</a>
+			<nav class="nav" aria-label="주요 메뉴">
+				{navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+			</nav>
+		</header>
 		<slot />
+		<footer class="site-footer">
+			<p>© 2026 K.Ha</p>
+		</footer>
 	</body>
 </html>
